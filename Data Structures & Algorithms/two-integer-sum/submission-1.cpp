@@ -6,7 +6,7 @@ public:
         for(int i = 0; i < nums.size(); i++) {
             int x = target - nums[i];
 
-            if(m.count(x)) {
+            if(m.contains(x)) {
                 return {m[x], i};
             }
 
